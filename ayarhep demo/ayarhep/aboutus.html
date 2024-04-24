@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutus.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+    <h1 class="heading">Our Team</h1>
+    <div class="image-container">
+        <div class="image" onclick="fetch_info(0)"><img src="/pic 1.JPG" alt=""></div>
+        <div class="image" onclick="fetch_info(1)" ><img src="/pic 1.JPG" alt=""></div>
+        <div class="image" onclick="fetch_info(2)"><img src="/pic 1.JPG" alt=""></div>
+        <div class="image" onclick="fetch_info(3)"><img src="/pic 1.JPG" alt=""></div>
+        <div class="image" onclick="fetch_info(4)"><img src="/pic 1.JPG" alt=""></div>
+    </div>
+    <div class="info-container">
+        <img class="profile" id="profile" src="/pic 12.JPG" alt="">
+        <div class="info">
+            <h1 class="name" id="name">Grace Muthoni</h1>
+            <h3 class="status" id="status">Accounts Head</h3>
+            <p class="classabout" id="about">
+                Grace Muthoni is Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nisi recusandae, amet consequuntur, ullam repudiandae natus culpa esse voluptates veniam quae nulla architecto nesciunt cupiditate beatae exercitationem eum. Quos, aliquid.
+            </p>
+        </div>
+    </div>
+    <script>
+        function fetch_info(i){
+            let profile=["/ayarhep official/gallery/pic 1.JPG","/ayarhep official/gallery/pic 1.JPG","/ayarhep official/gallery/pic 1.JPG", "/ayarhep official/gallery/pic 1.JPG","/ayarhep official/gallery/pic 1.JPG"];
+            let name=["Grace Muthoni", "Richard", "Ruth Jerop", "Jerry Kitiabi", "Michael Ager"];
+             let status=["Acccounts Head","Human Resource", "Senior Developer","Team Leader","Senior Devoloper "];
+             document.getElementById("profile").src=profile[i];
+             document.getElementById("name").innerHTML=name[i];
+             document.getElementById("status").innerHTML=status[i];
+             document.getElementById("about").innerHTML=name[i]+ " is Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nisi recusandae, amet consequuntur, ullam repudiandae natus culpa esse voluptates veniam quae nulla architecto nesciunt cupiditate beatae exercitationem eum. Quos, aliquid."
+
+
+
+        }
+    </script>
+</body>
+</html>
